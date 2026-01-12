@@ -44,8 +44,8 @@ jobs:
           file: docker/Dockerfile.train
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/filrouge-train-equipeX:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/filrouge-train-equipeX:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/filrouge-train-equipex:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/filrouge-train-equipex:${{ github.sha }}
 
       - name: Staging (simulation)
         run: |
